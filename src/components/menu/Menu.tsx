@@ -1,16 +1,16 @@
 import styled from "styled-components"
 
 
-export const Menu = () => {
+export const Menu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMenu>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Store</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+
+                {props.menuItems.map((item: string, index) => {
+                    return <li key={index}>
+                        <a href="">{item}</a>
+                    </li>
+                })}
             </ul>
         </StyledMenu>
     )
@@ -21,7 +21,7 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 30px;
         list-style-type: none;
-
+        justify-content: center;
     };
 
     li {
