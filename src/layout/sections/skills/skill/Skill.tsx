@@ -18,7 +18,8 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    width: 18%;
+    min-width: 18%;
+    max-width: 18%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.041);
     margin: 10px;
