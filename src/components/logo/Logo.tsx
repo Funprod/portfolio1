@@ -1,14 +1,15 @@
 import styled from "styled-components"
 import { Icon } from "../icon/Icon"
+import { theme } from "../../styles/Theme"
 
 export const Logo = () => {
     return (
         <StyledLogo>
             <StyledLink href="">
-                <StyledText>Daniel</StyledText>
-                <StyledIcon>
-                    <Icon iconId={"logo"} viewBox={"0 0 50 50"} />
-                </StyledIcon>
+                <StyledText>Andrey</StyledText>
+                <HeaderIcon>
+                    <Icon iconId={"logo"} viewBox={"0 0 10 10"} width="10px" height="10px" />
+                </HeaderIcon>
             </StyledLink>
         </StyledLogo>
     )
@@ -20,13 +21,12 @@ const StyledLogo = styled.div`
 
 const StyledLink = styled.a`
 display: flex;
-color: #CCCCCC;
-text-decoration: none
+align-items: center;
+color: ${theme.colors.font};
 `
 
 const StyledText = styled.h2`
-        margin-bottom: 0;
 `
-const StyledIcon = styled.span`
-    margin-top: 40px;
+const HeaderIcon = styled.div`
+    margin-top: 15px;
 `

@@ -9,6 +9,7 @@ import projImg3 from "./../../../assets/images/proj-3.webp"
 import projImg4 from "./../../../assets/images/proj-4.webp"
 import projImg5 from "./../../../assets/images/proj-5.webp"
 import projImg6 from "./../../../assets/images/proj-6.webp"
+import { Accent } from "../../../components/Accent"
 
 
 const portfolioItem = ["All", "Branding", "T-Shirt", "Package", "Poster",]
@@ -16,7 +17,7 @@ const portfolioItem = ["All", "Branding", "T-Shirt", "Package", "Poster",]
 export const Portfolio = () => {
     return (
         <StyledPortfolio>
-            <SectionTitle>Portfolio</SectionTitle>
+            <SectionTitle>My <Accent>Portfolio</Accent></SectionTitle>
             <Menu menuItems={portfolioItem} />
             <FlexWrapper justify="space-around" wrap={"wrap"}>
                 <Work title={"ultra jot Coffee"} text={"Package Design"} src={projImg1} />

@@ -1,11 +1,12 @@
 import styled from "styled-components"
 import { SectionTitle } from "../../../components/SectionTitle"
 import { StyledButton } from "../../../components/Button"
+import { Accent } from "../../../components/Accent"
 
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <SectionTitle>Let’s work together</SectionTitle>
+            <SectionTitle>Let’s work <Accent>Together</Accent></SectionTitle>
             <StyledForm>
                 <Filed placeholder={"Name"} />
                 <Filed placeholder={"Subject"} />

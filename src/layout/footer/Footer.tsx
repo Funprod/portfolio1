@@ -5,7 +5,6 @@ import { FlexWrapper } from "../../components/FlexWrapper"
 export const Footer = () => {
     return (
         <StyledFooter>
-            <Name>Daniel</Name>
             <FlexWrapper direction={"row-reverse"} align={"center"} justify="space-around">
                 <SocialList>
                     <SocialItem>
@@ -44,10 +43,5 @@ const SocialLink = styled.a`
     
 `
 const Copyright = styled.small`
-    color: #CCCCCC;
-`
-
-const Name = styled.h3`
-text-align: center;
     color: #CCCCCC;
 `

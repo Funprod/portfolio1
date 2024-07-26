@@ -1,13 +1,13 @@
 import styled from "styled-components"
 import { SectionTitle } from "../../../components/SectionTitle"
-import { Icon } from "../../../components/icon/Icon"
 import { Slider } from "../../../components/slider/Slider"
 import { FlexWrapper } from "../../../components/FlexWrapper"
+import { Accent } from "../../../components/Accent"
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
-            <SectionTitle>Testimony</SectionTitle>
+            <SectionTitle>My <Accent>Feedbacks</Accent></SectionTitle>
             <FlexWrapper direction={"column"} align={"center"}>
                 <Slider />
             </FlexWrapper>

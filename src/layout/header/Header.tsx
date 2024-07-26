@@ -1,22 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
+import { HeaderMenu } from "./headerMenu/HeaderMenu";
 
 const item = ["Home", "About", "Services", "Store", "Blog", "Contact",]
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify="space-around" align="center">
-                <Logo />
-                <Menu menuItems={item} />
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justify="space-between" align="center">
+                    <Logo />
+                    <HeaderMenu menuItems={item} />
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     )
 };
 
 const StyledHeader = styled.header`
-    background-color: #161D2A;
+    background-color: rgba(15, 22, 36, .9);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
 `

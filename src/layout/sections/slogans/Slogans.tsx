@@ -3,12 +3,13 @@ import { Icon } from "../../../components/icon/Icon"
 import { SectionTitle } from "../../../components/SectionTitle"
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { Slogan } from "./slogan/Slogan"
+import { Accent } from "../../../components/Accent"
 
 
 export const Slogans = () => {
     return (
         <StyledSlogan>
-            <SectionTitle>My job it: </SectionTitle>
+            <SectionTitle>Why <Accent>Me</Accent> ?</SectionTitle>
             <FlexWrapper wrap={"wrap"} justify={"space-around"}>
                 <Slogan iconId={"number3"} text={"Projects Completed"} />
                 <Slogan iconId={"number4"} text={"Products Sold"} />

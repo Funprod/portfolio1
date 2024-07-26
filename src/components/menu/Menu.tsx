@@ -20,7 +20,6 @@ const StyledMenu = styled.nav`
     ul {
         display: flex;
         gap: 30px;
-        list-style-type: none;
         justify-content: center;
     };
 
@@ -30,7 +29,6 @@ const StyledMenu = styled.nav`
 
     a {
         color: #CCCCCC;
-        text-decoration: none;
 
     }
 `
