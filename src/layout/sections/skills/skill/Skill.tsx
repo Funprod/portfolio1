@@ -27,14 +27,9 @@ const StyledSkill = styled.div`
 
 const SkillTitle = styled.h3`
     margin: 0 0 15px;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 1px;
 `
 
 const SkillText = styled.p`
-    font-weight: 400;
-    font-size: 16px;
     text-align: center;
     line-height: 1.4;
 `

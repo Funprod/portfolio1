@@ -9,7 +9,7 @@ import { Accent } from "../../../components/Accent"
 export const Slogans = () => {
     return (
         <StyledSlogan>
-            <SectionTitle>Why <Accent>Me</Accent> ?</SectionTitle>
+            <SectionTitle>Why <Accent>Me?</Accent></SectionTitle>
             <FlexWrapper wrap={"wrap"} justify={"space-around"}>
                 <Slogan iconId={"number3"} text={"Projects Completed"} />
                 <Slogan iconId={"number4"} text={"Products Sold"} />
