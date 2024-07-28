@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import photo from "../../../assets/images/Ava1.jpg"
+import photo from "../../../assets/images/Ava.jpg"
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { Container } from "../../../components/Container"
 import { theme } from "../../../styles/Theme"
@@ -35,8 +35,10 @@ const StyledMain = styled.div`
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
+    /* outline: 5px solid ${theme.colors.accent};
+    border-radius: 30px 0 30px 0; */
 
-    &::before {
+    /* &::before {
         content: "";
         width: 360px;
         height: 470px;
@@ -46,13 +48,15 @@ const PhotoWrapper = styled.div`
         top: -24px;
         left: 15px;
         z-index: -1;
-    }
+    } */
 `
 
 const Photo = styled.img`
     width: 350px;
     height: 430px;
     object-fit: cover;
+    /* outline: 5px solid ${theme.colors.accent}; */
+    border-radius: 20px;
 `
 
 const MainTitle = styled.h1`

@@ -1,11 +1,12 @@
 import styled from "styled-components"
 import { Icon } from "../../components/icon/Icon"
 import { FlexWrapper } from "../../components/FlexWrapper"
+import { theme } from "../../styles/Theme"
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction={"row-reverse"} align={"center"} justify="space-around">
+            <FlexWrapper direction={"row-reverse"} justify="space-around">
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
@@ -22,26 +23,37 @@ export const Footer = () => {
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
-                <Copyright>© 2021 Templates Jungle. All rights reserved</Copyright>
+                <Copyright>© 2021 <B>Templates Jungle.</B> All rights reserved</Copyright>
             </FlexWrapper>
         </StyledFooter>
     )
 }
 
 const StyledFooter = styled.footer`
-    background-color: #161D2A;
-    min-height: 20vh;
+    background-color: ${theme.colors.secondaryBg};
+    padding: 40px 0;
+    
 `
 const SocialList = styled.ul`
     
 `
 const SocialItem = styled.ul`
-display: flex;
-gap: 10px;
+    display: flex;
+    gap: 10px;
 `
 const SocialLink = styled.a`
-    
+    color: ${theme.colors.font};
+
+    &:hover {
+        color: ${theme.colors.accent};
+        transform: translateY(-4px);
+    }
 `
 const Copyright = styled.small`
-    color: #CCCCCC;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+`
+const B = styled.b`
+    color: ${theme.colors.accent};
 `

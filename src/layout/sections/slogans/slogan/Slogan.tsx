@@ -9,15 +9,15 @@ type SloganPropsType = {
 export const Slogan = (props: SloganPropsType) => {
     return (
         <StyledSlogan>
-            <Icon iconId={props.iconId} width={"150"} height={"150"} viewBox={"0 0 210 5"} />
+            <Icon iconId={props.iconId} width={"150"} height={"150"} viewBox={"0 0 215 10"} />
             <Text>{props.text}</Text>
         </StyledSlogan>
     )
 }
 
 const StyledSlogan = styled.div`
-    background-color: #161D2A;
-    color: #CCCCCC;
+    font-size: 18px;
+    font-weight: 700;
 `
 const Text = styled.p`
     
