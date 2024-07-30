@@ -35,20 +35,6 @@ const StyledMain = styled.div`
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
-    /* outline: 5px solid ${theme.colors.accent};
-    border-radius: 30px 0 30px 0; */
-
-    /* &::before {
-        content: "";
-        width: 360px;
-        height: 470px;
-        border: 3px solid ${theme.colors.accent};
-
-        position: absolute;
-        top: -24px;
-        left: 15px;
-        z-index: -1;
-    } */
 `
 
 const Photo = styled.img`
