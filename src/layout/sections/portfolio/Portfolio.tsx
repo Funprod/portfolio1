@@ -14,7 +14,7 @@ import { Container } from "../../../components/Container"
 import { TabMenu } from "./tabMenu/TabMenu"
 
 
-const portfolioItem = ["All", "Branding", "T-Shirt", "Package", "Poster",]
+const portfolioItem = ["All", "Branding", "Package", "Poster",]
 
 export const Portfolio = () => {
     return (

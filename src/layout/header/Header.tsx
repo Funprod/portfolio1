@@ -5,6 +5,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
 import { MobileMenu } from "./mobileMenu/MobileMenu";
+import { theme } from "../../styles/Theme";
 
 const item = ["Home", "Skills", "Portfolio", "Feedbacks", "Contact",]
 
@@ -23,8 +24,9 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: rgba(15, 22, 36, .9);
-    padding: 20px 0;
+    background-color: ${theme.colors.primaryBg};
+    opacity: 0.9;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;

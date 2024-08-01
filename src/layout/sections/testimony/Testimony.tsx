@@ -3,14 +3,17 @@ import { SectionTitle } from "../../../components/SectionTitle"
 import { Slider } from "../../../components/slider/Slider"
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { Accent } from "../../../components/Accent"
+import { Container } from "../../../components/Container"
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
-            <SectionTitle>My <Accent>Feedbacks</Accent></SectionTitle>
-            <FlexWrapper direction={"column"} align={"center"}>
-                <Slider />
-            </FlexWrapper>
+            <Container>
+                <SectionTitle>My <Accent>Feedbacks</Accent></SectionTitle>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    <Slider />
+                </FlexWrapper>
+            </Container>
         </StyledTestimony>
     )
 }
