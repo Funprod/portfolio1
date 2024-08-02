@@ -24,7 +24,6 @@ const StyledTabMenu = styled.nav`
         justify-content: space-between;
         max-width: 360px;
         width: 100%;
-        border: 1px solid green;
         margin: 0 auto 50px;
     };
 

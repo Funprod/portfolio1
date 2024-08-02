@@ -15,7 +15,7 @@ export const Main = () => {
                         <MainTitle>Front-end web developer</MainTitle>
                         <Name>Hello I’m <Accent>Andrey</Accent></Name>
                         <SmallText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, modi!
                         </SmallText>
                     </TextWrapper>
                     <PhotoWrapper>
@@ -33,7 +33,9 @@ const StyledMain = styled.div`
     display: flex;
 `
 
-const TextWrapper = styled.div``
+const TextWrapper = styled.div`
+    padding-top: 50px;
+`
 
 const PhotoWrapper = styled.div`
 `
@@ -55,7 +57,6 @@ const Photo = styled.img`
 const MainTitle = styled.h1`
 ${font({ weight: 500, Fmax: 18, Fmin: 16 })}
     opacity: 0.8;
-    padding-top: 20px;
 `
 
 const Name = styled.h2`

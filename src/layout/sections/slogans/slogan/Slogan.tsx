@@ -18,6 +18,7 @@ export const Slogan = (props: SloganPropsType) => {
 const StyledSlogan = styled.div`
     font-size: 18px;
     font-weight: 700;
+    padding: 40px;
 `
 const Text = styled.p`
     
