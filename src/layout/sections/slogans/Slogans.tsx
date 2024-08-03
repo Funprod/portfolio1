@@ -1,15 +1,15 @@
-import styled from "styled-components"
-import { Icon } from "../../../components/icon/Icon"
 import { SectionTitle } from "../../../components/SectionTitle"
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { Slogan } from "./slogan/Slogan"
 import { Accent } from "../../../components/Accent"
 import { Container } from "../../../components/Container"
+import React from "react"
+import { S } from "./Slogans_Styles"
 
 
-export const Slogans = () => {
+export const Slogans: React.FC = () => {
     return (
-        <StyledSlogan>
+        <S.Slogans>
             <Container>
                 <SectionTitle>Why <Accent>Me?</Accent></SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-around"}>
@@ -19,10 +19,6 @@ export const Slogans = () => {
                     <Slogan iconId={"number2"} text={"Happy Clients"} />
                 </FlexWrapper>
             </Container>
-        </StyledSlogan>
+        </S.Slogans>
     )
 }
-
-const StyledSlogan = styled.section`
-
-`

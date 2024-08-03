@@ -1,40 +1,19 @@
-import styled from "styled-components"
 import { Link } from "../../../../components/Link"
-import { theme } from "../../../../styles/Theme"
+import React from "react"
+import { S } from "../Portfolio_Styles"
 
 
-export const TabMenu = (props: { menuItems: Array<string> }) => {
+export const TabMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledTabMenu>
+        <S.TabMenu>
             <ul>
-
                 {props.menuItems.map((item: string, index) => {
-                    return <ListItem key={index}>
+                    return <S.ListItem key={index}>
                         <Link href="">{item}</Link>
-                    </ListItem>
+                    </S.ListItem>
                 })}
             </ul>
-        </StyledTabMenu>
+        </S.TabMenu>
     )
 }
 
-const StyledTabMenu = styled.nav`
-    ul {
-        display: flex;
-        justify-content: space-between;
-        max-width: 360px;
-        width: 100%;
-        margin: 0 auto 50px;
-    };
-
-    @media ${theme.media.mobile} {
-        ul {
-            /* flex-direction: column; */
-            gap: 10px;
-        }
-    }
-`
-
-const ListItem = styled.li`
-
-`

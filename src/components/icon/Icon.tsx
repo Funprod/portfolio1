@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import iconsSprite from '../../assets/images/icon-sprite.svg'
+import React from 'react'
 
 type iconPropsType = {
     iconId: string
@@ -8,7 +9,7 @@ type iconPropsType = {
     viewBox?: string
 }
 
-export const Icon = (props: iconPropsType) => {
+export const Icon: React.FC<iconPropsType> = (props: iconPropsType) => {
     return (
         <StyledIcon>
             <svg width={props.width || "50"} height={props.height || "50"}

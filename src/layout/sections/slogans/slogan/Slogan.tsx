@@ -1,25 +1,17 @@
-import styled from "styled-components"
 import { Icon } from "../../../../components/icon/Icon"
+import React from "react"
+import { S } from "../Slogans_Styles"
 
 type SloganPropsType = {
     iconId: string
     text: string
 }
 
-export const Slogan = (props: SloganPropsType) => {
+export const Slogan: React.FC<SloganPropsType> = (props: SloganPropsType) => {
     return (
-        <StyledSlogan>
+        <S.Slogan>
             <Icon iconId={props.iconId} width={"150"} height={"150"} viewBox={"0 0 215 10"} />
-            <Text>{props.text}</Text>
-        </StyledSlogan>
+            <S.Text>{props.text}</S.Text>
+        </S.Slogan>
     )
 }
-
-const StyledSlogan = styled.div`
-    font-size: 18px;
-    font-weight: 700;
-    padding: 40px;
-`
-const Text = styled.p`
-    
-`

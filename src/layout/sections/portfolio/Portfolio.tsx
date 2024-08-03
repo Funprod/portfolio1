@@ -1,6 +1,4 @@
-import styled from "styled-components"
 import { SectionTitle } from "../../../components/SectionTitle"
-
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { Work } from "./work/Work"
 import projImg1 from "./../../../assets/images/Proj-1.webp"
@@ -12,28 +10,59 @@ import projImg6 from "./../../../assets/images/proj-6.webp"
 import { Accent } from "../../../components/Accent"
 import { Container } from "../../../components/Container"
 import { TabMenu } from "./tabMenu/TabMenu"
+import React from "react"
+import { S } from "./Portfolio_Styles"
 
 
 const portfolioItem = ["All", "Branding", "Package", "Poster",]
 
-export const Portfolio = () => {
+const WorkData = [
+    {
+        title: "Ultra Jot Coffee",
+        text: "Package Design",
+        src: projImg1,
+    },
+    {
+        title: "Ultra Jot Coffee",
+        text: "Package Design",
+        src: projImg2,
+    },
+    {
+        title: "Ultra Jot Coffee",
+        text: "Package Design",
+        src: projImg3,
+    },
+    {
+        title: "Ultra Jot Coffee",
+        text: "Package Design",
+        src: projImg4,
+    },
+    {
+        title: "Ultra Jot Coffee",
+        text: "Package Design",
+        src: projImg5,
+    },
+    {
+        title: "Ultra Jot Coffee",
+        text: "Package Design",
+        src: projImg6,
+    },
+]
+
+export const Portfolio: React.FC = () => {
     return (
-        <StyledPortfolio>
+        <S.Portfolio>
             <Container>
                 <SectionTitle>My <Accent>Portfolio</Accent></SectionTitle>
                 <TabMenu menuItems={portfolioItem} />
                 <FlexWrapper wrap={"wrap"} justify={"center"} gap="20px">
-                    <Work title={"Ultra Jot Coffee"} text={"Package Design"} src={projImg1} />
-                    <Work title={"Ultra Jot Coffee"} text={"Package Design"} src={projImg2} />
-                    <Work title={"Ultra Jot Coffee"} text={"Package Design"} src={projImg3} />
-                    <Work title={"Ultra Jot Coffee"} text={"Package Design"} src={projImg4} />
-                    <Work title={"Ultra Jot Coffee"} text={"Package Design"} src={projImg5} />
-                    <Work title={"Ultra Jot Coffee"} text={"Package Design"} src={projImg6} />
+                    {WorkData.map((w, index) => {
+                        return <Work title={w.title} key={index}
+                            text={w.text}
+                            src={w.src} />
+                    })}
                 </FlexWrapper>
             </Container>
-        </StyledPortfolio>
+        </S.Portfolio>
     )
 }
-
-const StyledPortfolio = styled.section`
-`
