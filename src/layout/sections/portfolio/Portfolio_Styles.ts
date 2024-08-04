@@ -27,7 +27,7 @@ const ListItem = styled.li`
 const Wrapper = styled.div`
     display: none;
     position: absolute;
-    top: 150px;
+    top: 200px;
     z-index: 1;
     margin-left: 30px;
     max-width: 350px;
@@ -42,9 +42,8 @@ const Wrapper = styled.div`
 `
 const Image = styled.img`
     width: 350px;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-    object-position: bottom;
     z-index: 0;
 
     @media ${theme.media.mobile} {

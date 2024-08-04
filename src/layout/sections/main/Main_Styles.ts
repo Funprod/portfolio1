@@ -10,6 +10,9 @@ const Main = styled.div`
 
 const TextWrapper = styled.div`
     padding-top: 50px;
+    @media ${theme.media.mobile} {
+        text-align: center;
+    }
 `
 
 const PhotoWrapper = styled.div`
@@ -30,7 +33,7 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-${font({ weight: 500, Fmax: 18, Fmin: 16 })}
+${font({ weight: 500, Fmax: 20, Fmin: 18 })}
     opacity: 0.8;
 `
 
@@ -44,7 +47,7 @@ const Name = styled.h2`
     }
 `
 const SmallText = styled.h2`
-    ${font({ family: "Lato", weight: 400, Fmax: 16, Fmin: 14 })}
+    ${font({ family: "Lato", weight: 400, Fmax: 18, Fmin: 16 })}
     opacity: 0.8;
 `
 
