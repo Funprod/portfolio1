@@ -33,8 +33,12 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-${font({ weight: 500, Fmax: 20, Fmin: 18 })}
+${font({ weight: 500, Fmax: 26, Fmin: 18 })}
     opacity: 0.8;
+
+    p {
+        display: none;
+    }
 `
 
 const Name = styled.h2`

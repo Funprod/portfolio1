@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../styles/Theme";
 
-export const Link = styled.a`
+export const Link = styled.a<{active?: boolean}>`
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
@@ -11,4 +11,8 @@ export const Link = styled.a`
     &:hover {
         color: ${theme.colors.accent};
     }
+
+    ${props => props.active && css<{active?: boolean}>`
+        color: ${theme.colors.accent};
+    `}
 `

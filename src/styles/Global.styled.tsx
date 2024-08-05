@@ -65,4 +65,8 @@ p {
     font-size: 16px;
 }
 
+button {
+    color: ${theme.colors.font};
+}
+
 `

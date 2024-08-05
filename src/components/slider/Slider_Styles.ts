@@ -3,6 +3,7 @@ import { theme } from "../../styles/Theme"
 
 const Slider = styled.div`
     max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +17,7 @@ const Text = styled.p`
     font-size: 18px;
     font-style: italic;
     letter-spacing: 1.5px;
+    text-align: center;
 `
 
 const Name = styled.span`
@@ -54,6 +56,7 @@ const Pagination = styled.div`
 `
 const Wrapper = styled.div`
     display: flex;
+    justify-content: center;
     margin: 34px 0;
 `
 const TextTestimony = styled.div`

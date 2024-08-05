@@ -1,31 +1,47 @@
+import React from 'react';
 import imageEmma from "../../assets/images/emma.webp"
-import { FlexWrapper } from "../FlexWrapper"
-import { S } from "./Slider_Styles"
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+import './../../styles/slider.css'
+import { S } from './Slider_Styles';
 
+type SlidePropsType = {
+    text: string
+    userName: string
+    userPost: string
+    image: string
+}
 
-export const Slider: React.FC = () => {
+const Slide = (props: SlidePropsType) => {
     return (
-        <S.Slider>
-            <FlexWrapper>
-                <S.Slide>
-                    <S.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Dapibus eu placerat at nisl posuere aliquet amet pharetra malesuada.
-                        Suspendisse nisl ac at tortor.
-                    </S.Text>
-                    <S.Wrapper>
-                        <S.Image src={imageEmma} />
-                        <S.TextTestimony>
-                            <S.Name>Emma Brown</S.Name>
-                            <S.Post>CEO - Squirrel Sweets</S.Post>
-                        </S.TextTestimony>
-                    </S.Wrapper>
-                </S.Slide>
-            </FlexWrapper>
-            <S.Pagination>
-                <span></span>
-                <span className={"active"}></span>
-                <span></span>
-            </S.Pagination>
-        </S.Slider>
+        <S.Slide>
+            <S.Text>{props.text}</S.Text>
+            <S.Wrapper>
+                <S.Image src={props.image} />
+                <S.TextTestimony>
+                    <S.Name>{props.userName}</S.Name>
+                    <S.Post>{props.userPost}</S.Post>
+                </S.TextTestimony>
+            </S.Wrapper>
+        </S.Slide>
     )
 }
+
+const items = [
+    <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus eu placerat at nisl posuere aliquet amet pharetra malesuada. Suspendisse nisl ac at tortor."}
+        userName={"Emma Brown"} userPost={"CEO - Squirrel Sweets"} image={imageEmma} />,
+    <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus eu placerat at nisl posuere aliquet amet pharetra malesuada. Suspendisse nisl ac at tortor."}
+        userName={"Emma Brown"} userPost={"CEO - Squirrel Sweets"} image={imageEmma} />,
+    <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus eu placerat at nisl posuere aliquet amet pharetra malesuada. Suspendisse nisl ac at tortor."}
+        userName={"Emma Brown"} userPost={"CEO - Squirrel Sweets"} image={imageEmma} />,
+];
+
+export const Slider = () => (
+    <S.Slider>
+        <AliceCarousel
+            mouseTracking
+            items={items}
+        />
+    </S.Slider>
+);
+
