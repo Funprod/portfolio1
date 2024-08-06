@@ -61,7 +61,7 @@ const skillData = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id={"Skills"}>
             <Container>
                 <SectionTitle>My <Accent>Skills</Accent></SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"center"}>

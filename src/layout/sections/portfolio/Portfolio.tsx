@@ -92,7 +92,7 @@ export const Portfolio: React.FC = () => {
     }
 
     return (
-        <S.Portfolio>
+        <S.Portfolio id={"portfolio"}>
             <Container>
                 <SectionTitle>My <Accent>Portfolio</Accent></SectionTitle>
                 <TabMenu tabsItems={tabsItems}

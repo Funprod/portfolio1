@@ -7,7 +7,7 @@ import { S } from "./Contacts_Styles"
 
 export const Contacts: React.FC = () => {
     return (
-        <S.Contacts>
+        <S.Contacts id={"contact"}>
             <Container>
                 <SectionTitle>Let’s work <Accent>Together</Accent></SectionTitle>
                 <S.Form>

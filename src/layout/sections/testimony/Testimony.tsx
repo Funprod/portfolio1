@@ -8,7 +8,7 @@ import React from "react"
 
 export const Testimony: React.FC = () => {
     return (
-        <StyledTestimony>
+        <StyledTestimony id={"feedbacks"}>
             <Container>
                 <SectionTitle>My <Accent>Feedbacks</Accent></SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
@@ -20,6 +20,7 @@ export const Testimony: React.FC = () => {
 }
 
 const StyledTestimony = styled.section`
-background-color: #161D2A;
-min-height: 50vh;
+    position: relative;
+    background-color: #161D2A;
+    min-height: 50vh;
 `
