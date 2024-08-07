@@ -35,7 +35,7 @@ export const Menu: React.FC = () => {
                         to={item.href}
                         smooth={true}
                         spy={true}
-                        offset={-10}
+                        duration={800}
                     >
                         {item.title}
                         <S.Mask>

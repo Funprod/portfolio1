@@ -6,6 +6,7 @@ export const Link = styled.a<{active?: boolean}>`
     font-size: 16px;
     letter-spacing: 1px;
     padding: 5px;
+    transition: ${theme.animations.transition};
 
 
     &:hover {

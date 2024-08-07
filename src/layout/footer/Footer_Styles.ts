@@ -20,15 +20,15 @@ const SocialList = styled.ul`
         display: flex;
         gap: 10px;
 `
-const SocialItem = styled.ul`
+const SocialItem = styled.li`
 
 `
 const SocialLink = styled.a`
     color: ${theme.colors.font};
+    transition: ${theme.animations.transition};
 
     &:hover {
         color: ${theme.colors.accent};
-        transform: translateY(-10px);
     }
 `
 const Copyright = styled.small`

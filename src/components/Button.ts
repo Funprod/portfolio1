@@ -16,6 +16,7 @@ export const StyledButton = styled.button`
     &:hover {
         color: ${theme.colors.accent};
         border: 2px solid ${theme.colors.accent};
+        transition: ${theme.animations.transition};
     }
 
     @media ${theme.media.tablet} {

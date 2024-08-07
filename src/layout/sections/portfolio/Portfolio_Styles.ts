@@ -13,7 +13,6 @@ const TabMenu = styled.nav`
 
     @media ${theme.media.mobile} {
         ul {
-            /* flex-direction: column; */
             gap: 10px;
         }
     }
@@ -61,6 +60,7 @@ const Work = styled.div`
         }
         ${Image} {
             filter: brightness(50%);
+            transition: ${theme.animations.transition};
         }
     }
 
@@ -93,6 +93,7 @@ margin-top: 15px;
 
 
 const Portfolio = styled.section`
+
 `
 
 export const S = {

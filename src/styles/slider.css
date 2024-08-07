@@ -4,10 +4,11 @@
 
 .alice-carousel__dots-item:not(.__custom) {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
+  transition: 0.2s ease-in-out;
   border-radius: 50%;
-  border: 1.5px solid #ffffff;
+  border: 2px solid #ffffff;
   background-color: transparent;
 }
 

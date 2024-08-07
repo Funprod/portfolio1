@@ -8,6 +8,7 @@ import { Contacts } from './layout/sections/contacts/Contacts';
 import { Slogans } from './layout/sections/slogans/Slogans';
 import { Footer } from './layout/footer/Footer';
 import { Particle } from './components/particle/Particle';
+import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Slogans />
             <Contacts />
             <Footer />
+            <GoTopBtn />
         </div>
     );
 }

@@ -66,7 +66,7 @@ export const Particle = () => {
                             default: "bounce",
                         },
                         random: true,
-                        speed: 3,
+                        speed: 1.5,
                         straight: true,
                     },
                     number: {
